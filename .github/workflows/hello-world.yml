@@ -33,7 +33,7 @@ jobs:
           echo test, and deploy your project.
   job2:
     runs-on: windows-latest
-    
+    needs: job1
     steps:
       - uses: actions/checkout@v2
       - run: echo Hello Windows World!
